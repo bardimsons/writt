@@ -49,7 +49,7 @@ PACKAGES+=" luci-app-diskman luci-app-hd-idle luci-app-disks-info smartmontools 
 PACKAGES+=" samba4-server luci-app-samba4 aria2 ariang luci-app-aria2 luci-app-tinyfm"
 
 # Docker
-PACKAGES+=" docker docker-compose dockerd luci-app-dockerman"
+#PACKAGES+=" docker docker-compose dockerd luci-app-dockerman"
 
 # Bandwidth And Network Monitoring
 PACKAGES+=" internet-detector luci-app-internet-detector internet-detector-mod-modem-restart nlbwmon luci-app-nlbwmon vnstat2 vnstati2 luci-app-vnstat2 luci-app-netmonitor"
