@@ -5,13 +5,13 @@
 # Download packages from official snapshots, stable repo's urls and custom repo's.
 {
 files1=(
-    "luci-proto-modemmanager|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/luci"
-    "luci-proto-mbim|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/luci"
-    "modemmanager|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "libmbim|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "libqmi|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "modemmanager-rpcd|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "sms-tool|https://downloads.openwrt.org/snapshots/packages/$ARCH_3/packages"
+    "luci-proto-modemmanager|https://downloads.openwrt.org/snapshots/$ARCH_3/luci"
+    "luci-proto-mbim|https://downloads.openwrt.org/snapshots/$ARCH_3/luci"
+    "modemmanager|https://downloads.openwrt.org/snapshots/$ARCH_3/packages"
+    "libmbim|https://downloads.openwrt.org/snapshots/$ARCH_3/packages"
+    "libqmi|https://downloads.openwrt.org/snapshots/$ARCH_3/packages"
+    "modemmanager-rpcd|https://downloads.openwrt.org/snapshots/$ARCH_3/packages"
+    "sms-tool|https://downloads.openwrt.org/snapshots/$ARCH_3/packages"
     #"luci-proto-modemmanager|https://downloads.openwrt.org/releases/packages-23.05/$ARCH_3/luci"
     #"luci-proto-mbim|https://downloads.openwrt.org/releases/packages-23.05/$ARCH_3/luci"
     #"modemmanager|https://downloads.openwrt.org/releases/packages-23.05/$ARCH_3/packages"
@@ -32,8 +32,8 @@ files1=(
     "python3-speedtest-cli|https://downloads.openwrt.org/releases/packages-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/packages"
     "librespeed-go|https://downloads.openwrt.org/releases/packages-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/packages"
     "luci-app-ramfree|https://downloads.immortalwrt.org/snapshots/packages/$ARCH_3/luci"
-    "luci-app-pbr|https://downloads.openwrt.org/releases/packages-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/luci"
-    "pbr|https://downloads.openwrt.org/releases/packages-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/packages"
+    "luci-app-pbr|downloads.openwrt.org/releases/-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/luci"
+    "pbr|https://downloads.openwrt.org/releases/-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/packages"
 )
 
 echo "###########################################################"
