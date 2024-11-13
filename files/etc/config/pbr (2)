@@ -1,0 +1,67 @@
+
+config pbr 'config'
+	option enabled '1'
+	option verbosity '2'
+	option strict_enforcement '1'
+	option resolver_set 'dnsmasq.nftset'
+	list resolver_instance '*'
+	option ipv6_enabled '0'
+	option boot_timeout '30'
+	option rule_create_option 'add'
+	option procd_boot_delay '0'
+	option procd_reload_delay '1'
+	option webui_show_ignore_target '0'
+	option nft_rule_counter '0'
+	option nft_set_auto_merge '1'
+	option nft_set_counter '0'
+	option nft_set_flags_interval '1'
+	option nft_set_flags_timeout '0'
+	option nft_set_policy 'performance'
+	list webui_supported_protocol 'all'
+	list webui_supported_protocol 'tcp'
+	list webui_supported_protocol 'udp'
+	list webui_supported_protocol 'tcp udp'
+	list webui_supported_protocol 'icmp'
+	list supported_interface 'wahweii'
+	list ignored_interface 'wan'
+
+config include
+	option path '/usr/share/pbr/pbr.user.aws'
+	option enabled '0'
+
+config include
+	option path '/usr/share/pbr/pbr.user.netflix'
+	option enabled '0'
+
+config include
+	option path '/usr/share/pbr/pbr.user.wg_server_and_client'
+	option enabled '0'
+
+config dns_policy
+	option name 'Redirect Local IP DNS'
+	option src_addr '192.168.1.5'
+	option dest_dns '1.1.1.1'
+	option enabled '0'
+
+config policy
+	option name 'game udp'
+	option dest_port '4050-4079 7000-8079 8081-8442 8444-9999 10001-49950'
+	option interface 'wahweii'
+
+config policy
+	option name 'steam'
+	option dest_addr 'easyanticheat.net easy.ac ext2-sgp1.steamserver.net'
+	option interface 'wahweii'
+	option enabled '0'
+
+config policy
+	option name 'valo'
+	option dest_addr 'sa1.chat.si.riotgames.com data.riotgames.com clientconfig.rpg.riotgames.com'
+	option interface 'wahweii'
+	option enabled '0'
+
+config policy
+	option name 'gearup'
+	option dest_port '1980-2150'
+	option interface 'wahweii'
+
