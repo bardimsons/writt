@@ -5,13 +5,13 @@
 # Download packages from official snapshots, stable repo's urls and custom repo's.
 {
 files1=(
-    "luci-proto-modemmanager|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/luci"
-    "luci-proto-mbim|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/luci"
-    "modemmanager|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "libmbim|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "libqmi|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "modemmanager-rpcd|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/packages"
-    "sms-tool|mirror-03.infra.openwrt.org/snapshots/packages/$ARCH_3/packages"
+    "luci-proto-modemmanager|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/luci"
+    "luci-proto-mbim|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/luci"
+    "modemmanager|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/packages"
+    "libmbim|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/packages"
+    "libqmi|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/packages"
+    "modemmanager-rpcd|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/packages"
+    "sms-tool|mirror-03.infra.openwrt.org/snapshots/packages/aarch64_cortex-a72/packages"
     #"luci-proto-modemmanager|https://downloads.openwrt.org/releases/packages-23.05/$ARCH_3/luci"
     #"luci-proto-mbim|https://downloads.openwrt.org/releases/packages-23.05/$ARCH_3/luci"
     #"modemmanager|https://downloads.openwrt.org/releases/packages-23.05/$ARCH_3/packages"
