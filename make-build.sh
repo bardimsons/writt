@@ -18,7 +18,7 @@ kmod-usb-uhci kmod-usb2 kmod-usb-ehci kmod-usb-net-ipheth usbmuxd libusbmuxd-uti
 kmod-phy-broadcom kmod-phylib-broadcom kmod-tg3"
 
 # Policy routing
-PACKAGES+=" luci-app-pbr pbr"
+PACKAGES+=" luci-app-pbr pbr pbr-iptables"
 
 # Cpu Performance
 PACKAGES+=" luci-app-cpu-perf"
