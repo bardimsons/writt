@@ -43,7 +43,7 @@ echo "#"
 for entry in "${files1[@]}"; do
     IFS="|" read -r filename1 base_url <<< "$entry"
     echo "Processing file: $filename1"
-    file_urls=$(curl -sL "$base_url" | grep -oE "${filename1}_[0-9a-zA-Z\._~-]*\.ipk" | sort -V | tail -n 1)
+    file_urls=$(curl -sL "$base_url" | grep -oE "${filename1}_[0-9a-zA-Z\._~-]*("\.ipk" "\.apk")" | sort -V | tail -n 1)
     for file_url in $file_urls; do
         if [ ! -z "$file_url" ]; then
             echo "Downloading $file_url"
