@@ -24,7 +24,7 @@ files1=(
     "luci-app-netspeedtest|https://fantastic-packages.github.io/packages/releases/$(echo "$BRANCH" | cut -d'.' -f1-2)/packages/aarch64_generic/luci"
     "python3-speedtest-cli|https://downloads.openwrt.org/releases/packages-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/packages"
     "librespeed-go|https://downloads.openwrt.org/releases/packages-$(echo "$BRANCH" | cut -d'.' -f1-2)/$ARCH_3/packages"
-    "luci-app-ramfree|https://downloads.immortalwrt.org/snapshots/packages/$ARCH_3/luci"
+    "luci-app-ramfree|https://downloads.immortalwrt.org/releases/23.05-SNAPSHOT/packages/$ARCH_3/luci"
 )
 
 echo "###########################################################"
