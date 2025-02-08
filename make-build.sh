@@ -66,9 +66,6 @@ PACKAGES+=" librespeed-go python3-speedtest-cli iperf3 luci-app-netspeedtest"
 # Base64 Encode Decode
 PACKAGES+=" luci-app-base64"
 
-# Argon Theme
-PACKAGES+=" luci-theme-argon luci-app-argon-config"
-
 # Alpha Theme
 PACKAGES+=" luci-theme-alpha luci-app-alpha-config"
 
